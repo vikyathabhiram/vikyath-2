@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .carousel-indicators {
+    position: relative; 
+    margin-top: 20px; 
+  }
+      .carousel-indicators li {
+        list-style: none; 
+        display: inline-block; 
+        width: 10px; 
+        height: 10px;
+        margin: 0 5px; 
+        border-radius: 50%; 
+        background-color: #fff; 
+        cursor: pointer;
+      }
+    
+      .carousel-indicators .active {
+        background-color: rgb(245, 131, 150);
+      }
+    </style>
+  </head>
+<body>
+    <div class="w-100 p-1 bhi">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-auto text-center ">
+                    <div class="btn-group ">
+                        <button class="btn btn-light btn-sm" type="button">
+                            All Cities<span class="ms-5"></span>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+                            <li><a class="dropdown-item" href="#">Vijayawada</a></li>
+                            <li><a class="dropdown-item" href="#">Kerala</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <img class="jik me-4" src="logo2.png">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="#"><small>Venues</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Vendors</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Photos</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Realweddings</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Blog</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Shop</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Einvites</small></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-3 w-50" type="search" placeholder="Search for..." aria-label="Search">
+              <img class="ko mt-2 me-3 " src="logo4.jpeg">
+              <a class="ji mt-3" href="#">Login/Register</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="position-relative hui">
+        <img class="w-100" style="height: 450px;" src="bg2.jpeg" alt="Background Image">
+        <div class="position-absolute top-50 mt-5 start-50 translate-middle w-50 h-75" style="border: 2px ;">
+            <div class="container h-100 ">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-auto ">
+                        <h3 class="mt-0" style="color: white;">Unlock Your Dream Wedding Journey</h3>
+                        <h6 class="mt-3" style="color: white;">Discover inspiration, connect with vendors, and Plan with Ease</h6>
+                        <div class="btn-group mt-0">
+                            <button class="btn btn-light btn-sm" type="button">Search for Vendor<span class="ms-2"></span></button>
+                            <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Rahul</a></li>
+                                <li><a class="dropdown-item" href="#">Ramana</a></li>
+                                <li><a class="dropdown-item" href="#">Aditya</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group mt-0">
+                            <button class="btn btn-light btn-sm" type="button">Select Location<span class="ms-4"></span></button>
+                            <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Chennai</a></li>
+                                <li><a class="dropdown-item" href="#">Jammu</a></li>
+                                <li><a class="dropdown-item" href="#">Gudiwada</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn" style="background-color: pink; color: white;">Find</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center mt-5">Trending Venue Searches</h3>
+    <p class="text-center">Discover the most popular Wedding Venues of the season!</p>
+
+    <div id="carouselExampleControls" class="carousel slide mt-5 " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-1.jpeg">
+                  <h3 class="mt-3">4 star & Above wedding</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar |All Localities</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-2.jpeg">
+                  <h3 class="mt-3">Banquet Halls</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-3.jpeg">
+                  <h3 class="mt-3">Lawns/ Farmhouses</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-1.jpeg">
+                  <h3 class="mt-3">4 star & Above wedding</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar |All Localities</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-2.jpeg">
+                  <h3 class="mt-3">Banquet Halls</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-3.jpeg">
+                  <h3 class="mt-3">Lawns/ Farmhouses</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-1.jpeg">
+                  <h3 class="mt-3">4 star & Above wedding</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar |All Localities</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-2.jpeg">
+                  <h3 class="mt-3">Banquet Halls</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-center">
+                  <img class="img-fluid abi mt-5 mx-auto d-block" src="ma-3.jpeg">
+                  <h3 class="mt-3">Lawns/ Farmhouses</h3>
+                  <p style="color: rgb(245, 131, 150);">Dhantoli | Mankapura | Chandrakiran nagar | All Locations</p>
+                  <button class="btn btn-primary mt-5 mb-3 w-50 mx-auto" style="background-color: rgb(205, 53, 78);">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+      </ol>
+    </div>
+
+    <div class="text-center">
+      <button class="btn mt-2 mb-5" style="border-color: pink;">Explore trending venues now</button>
+  </div>
+
+<!--------------------------------------------------->
+<div class="hui" style="background-color: rgb(247, 233, 235);">
+  <h3 class="text-center">Top Searches</h3>
+  <p class="text-center">Explore the most sought-After Wedding trends and vendors!</p>
+<div id="carouselTopSearches" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="ma-22.png">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal Wear</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="ma-23.webp">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Photographers</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="ma-20.jpeg">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal makeup</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="bw-2.jpeg">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal Wear</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="bg-2.webp">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Photographers</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="mak-3.webp">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal makeup</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="bw-3.jpeg">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal Wear</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="bg-3.avif">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Photographers</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-md-4 h-50">
+            <div class="card text-center h-50">
+              <!-- Card content here -->
+              <img class="jiuh" src="mak-2.jpeg">
+              <div class="huko w-75 h-25 mx-auto" style="border: 2px ; margin-top: -20px; background-color: white;">
+                <h6 class="mt-3 text-start ms-4">Bridal makeup</h6>
+                <p class="text-start ms-4"><a href="#" class="jio">Read more.....</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTopSearches" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselTopSearches" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Explore trending venues now</button>
+</div>
+</div>
+<!---------------------------------------------------------------->
+<h3 class="text-center mt-5">Wedding Themes</h3>
+<p class="text-center mt-1">Explore diverse and inspiratinal wedding Theme Ideas!</p>
+
+<div id="carouselWeddingThemes" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="ma-24.jpeg">
+              <h4 class="text-start ms-2 mt-2">Venues</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="ma-21.jpeg">
+              <h4 class="text-start ms-2 mt-2">Makeup</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="ma-8.jpeg">
+              <h4 class="text-start ms-2 mt-2">Planning and decor</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="ven-2.jpeg">
+              <h4 class="text-start ms-2 mt-2">Venues</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="make-2.png">
+              <h4 class="text-start ms-2 mt-2">Makeup</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="pd-2.jpeg">
+              <h4 class="text-start ms-2 mt-2">Planning and decor</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="ven-3.jpeg">
+              <h4 class="text-start ms-2 mt-2">Venues</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="make-4.jpeg">
+              <h4 class="text-start ms-2 mt-2">Makeup</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <img class="viky" src="pd-3.avif">
+              <h4 class="text-start ms-2 mt-2">Planning and  decor</h4>
+              <p class="text-start ms-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad similique iste nostrum illo aut corrupti quos officia ut, ab eum error praesentium velit laborum minima commodi accusamus neque facere.</p>
+              <p class="text-start ms-2"><a href="#" class="voi">View details</a></p>
+              <!-- Card content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselWeddingThemes" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselWeddingThemes" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Explore trending venues now</button>
+</div>
+
+<!------------------------------------------------->
+<div class="vada">
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-6 col-md-6 col-sm-12 mt-5">
+      <h3 class="mt-5">Inhouse Services</h3>
+      <p>Discover Convinient In-house Wedding planning services!</p>
+      <div class="text-center mb-5">
+        <button class="btn mt-2 mb-5 mt-5 " style="border-color: pink;">Explore trending venues now</button>
+      </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-6 col-sm-12 " style="background-color: rgb(247, 233, 235);">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active mt-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="wedsta-1.jpeg" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Wedsta</h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="gs-2.jpeg" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Genie Se</h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="va-3.webp" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Venue book</h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for two more cards -->
+              </div>
+            </div>
+            <!-- Repeat for additional carousel items -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="wedsta-3.webp" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Wed</h5>
+                      <p class="card-text">Some quick example text to.</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="gs-3.jpeg" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Genie</h5>
+                      <p class="card-text">Some quick example text  on.</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img class="amm" src="va-3.webp" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Card 1</h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="text-center">
+                        <button class="btn mt-2 " style="border-color: pink; color: white; background-color: rgb(243, 116, 137);">Know More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for two more cards -->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"  data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<h4 class="text-center mt-5">Auethentic Wedding Experiences</h4>
+<p class="text-center mb-5">Real couple, Real stories: Dive into Genuie Wedding Experiences!</p>
+
+<div class="dad" style="background-color:rgb(247, 233, 235);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-12 mt-4" style="display: flex; align-items: flex-end;">
+        <img class="vira w-50 h-100" src="vir1.jpeg">
+        <div class="jiva w-50 h-75" style="border: 2px solid white; margin-left: -25px; background-color: white;">
+          <h5 class="ms-3 mt-2">Loprem white rep</h5>
+          <p class="ms-3">Lorem island is going to be the number 1</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12 mt-4" style="display: flex; align-items: flex-end;">
+        <img class="vira w-50 h-100" src="vir2.webp">
+        <div class="jiva w-50 h-75" style="border: 2px solid white; margin-left: -25px; background-color: white;">
+          <h5 class="ms-3 mt-3">Loprem white rep</h5>
+          <p class="ms-3">Lorem island is going to be the number 1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dad" style="background-color:rgb(247, 233, 235);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+        <img class="vira w-50 h-100" src="vir3.jpeg">
+        <div class="jiva w-50 h-75" style="border: 2px solid white; margin-left: -25px; background-color: white;">
+          <h5 class="ms-3 mt-2">Loprem white rep</h5>
+          <p class="ms-3">Lorem island is going to be the number 1</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+        <img class="vira w-50 h-100" src="vir4.avif">
+        <div class="jiva w-50 h-75" style="border: 2px solid white; margin-left: -25px; background-color: white;">
+          <h5 class="ms-3 mt-3">Loprem white rep</h5>
+          <p class="ms-3">Lorem island is going to be the number 1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Explore more real weddings</button>
+</div>
+
+<h4 class="text-center">Picture Collection to Explore</h4>
+<p class="text-center">Getting inspired with stunning Wedding Photograpgy!</p>
+<!-------------------------------------------------->
+<div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Bridal Legenga</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">Outfits</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Blouse deisgn</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">Wedding Sarees</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items here -->
+        </div>
+      </div>
+    </div>
+    <!-- Add more carousel items here -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Bridal Legenga</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">outfits</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Blouse</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">sarees</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items here -->
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Bridal Legenga</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">outfits</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="leh-01.webp">
+                <h5 class="mb-4">Blouse design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 mt-4">
+            <div class="card text-center">
+              <div class="anus" style="background-color:rgb(247, 233, 235) ;">
+                <img class="whei h-100 w-75 mb-4" style="margin-top: -20px;" src="sa-01.avif">
+                <h5 class="mb-4">Bridal sarees</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Explore more Collection</button>
+</div>
+
+<h4 class="text-center">Featured Vendors</h4>
+<p class="text-center">Discover Top-Rated Wedding Service Providers!</p>
+
+<!---------------------------------------------------------------------------->
+<div id="carouselExampleviky" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira" src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira" src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira " src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira " src="vir4.avif">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira " src="vir4.avif">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira" src="vir4.avif">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira " src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira " src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 mt-4 mb-5" style="display: flex; align-items: flex-end;">
+            <img class="vira" src="vir3.jpeg">
+            <div class="jiva w-100 h-100" style="border: 2px solid whitesmoke; margin-left: -25px; margin-bottom: -30px; background-color: white;">
+              <h6 class="ms-3 mt-2">Loprem ipsum Lorem ipsum</h6>
+              <p class="ms-3">Lorem island is going to be the number 1</p>
+              <p class="ms-3"><a style="text-decoration: none; color: black;" href="#">Lorem ipsum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleviky" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleviky" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Find your perfect Vendor Now</button>
+</div>
+
+<h4 class="text-center  mt-4">Latest Blogs</h4>
+<p class="text-center">Stay updated with the Latest Wedding Tips and </p>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <img class="gaya img-fluid" style="border-radius: 20px;" src="virsha-01.avif">
+      <p class="mt-2"><small>10 Apr 2024</small></p>
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum natus vitae enim maiores sint ea blanditiis. Ipsum, odit cum ex accusantium beatae fugit, aut autem culpa suscipit quibusdam possimus praesentium.</small></p>
+      <p>Read more <a class="plo" href="#">---></a></p>
+    </div>
+    <div class="col col-sm-12 col-md-6 col-lg-6">
+      <div class="row">
+          <div class="col-6">
+              <img class="mt-2" style="width: 200px; height: 180px; border-radius: 5px;" src="abi-02.webp">
+          </div>
+          <div class="col-6">
+              <div class="content">
+                  <p class="mt-3"><small>10 Apr 2024</small></p>
+                  <h6><small>Lorem ipsum dolor</small></h6>
+                  <p><small>It is a long established fact that a reader will be distracted</small></p>
+                  <p><small>Read more <a class="plo" href="#">---></a></small></p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <img class="mt-1" style="width: 200px; height: 180px; border-radius: 5px;" src="abi-03.jpeg">
+        </div>
+        <div class="col-6">
+            <div class="content">
+                <p class="mt-2"><small>10 Apr 2024</small></p>
+                <h6><small>Lorem ipsum dolor</small></h6>
+                <p><small>It is a long established fact that a reader will be distracted</small></p>
+                <p><small>Read more <a class="plo" href="#">---></a></small></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-6">
+          <img class="mt-1" style="width: 200px ; height: 180px; border-radius: 5px;" src="abi-01.jpeg">
+      </div>
+      <div class="col-6">
+          <div class="content">
+              <p class="mt-2"><small>10 Apr 2024</small></p>
+              <h6><small>Lorem ipsum dolor</small></h6>
+              <p><small>It is a long established fact that a reader will be distracted</small></p>
+              <p><small>Read more <a class="plo" href="#">---></a></small></p>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn mt-2 mb-5 mt-5" style="border-color: pink;">Read More Blog</button>
+</div>
+
+<!---------------------------------------------------------------------------------->
+
+<div class="edi" style="background-color: rgb(247, 233, 235); width: 100%; height: auto">
+  <h4 class="ms-5">MarriageBazaar - Your personal Wedding Organizer</h4>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-12 col-lg-4 col-md-4">
+        <h5>Subscribe to our newsletter</h5>
+        <p>Share your email & phone number to stay updated with our latest news.</p>
+        <h6 class="mt-5">Contact us to get best deals</h6>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elitconsectetur adipisicing elit</p>
+        <h6 class="mt-5">Contact us to get best deals</h6>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elitconsectetur adipisicing elit</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <p class="text-start mt-4 ms-5">Your Email</p>
+        <div class="d-flex justify-content-start"> <!-- Center the input -->
+            <input type="text" class="text-center ms-5 " placeholder="example@email.com" style="background-color: rgb(247, 233, 235); margin: 0;">
+        </div>
+        <h4 class="text-center mt-5 ms-5">Follow us on:</h4>
+        <div class="d-flex justify-content-center mt-2 ms-5">
+          <img class="mon" src="fb.png">
+          <p class="ms-4">Facebook</p>
+      </div>
+      <div class="d-flex justify-content-center ms-5">
+        <img class="mon" src="tw.jpeg">
+        <p class="ms-4">Twitter.....</p>
+    </div>
+    <div class="d-flex justify-content-center ms-5">
+      <img class="mon" src="prin.png">
+      <p class="ms-4">Pinterest.</p>
+  </div>
+  <div class="d-flex justify-content-center ms-5">
+    <img class="mon" src="ins.jpeg">
+    <p class="ms-4">Instagram</p>
+</div>
+      
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <p class="text-start mt-4 ms-5">Your Phone</p>
+        <div class="d-flex justify-content-start"> <!-- Center the input -->
+            <input type="text" class="text-center ms-5 " placeholder="+91 1010 - 000 - 666" style="background-color: rgb(247, 233, 235); margin: 0;">
+            <button class="ms-5 p-2" style="background-color:rgb(243, 116, 137) ;color: white;">Subscribe</button>
+        </div>
+        <p class="text-center ms-5 mt-3"><small>Get the MarriageBazaar</small></p>
+        <div class="d-flex justify-content-center  ms-5">
+          <button class="d-flex align-items-center ms-5" style="background-color: black;">
+              <img class="mon" src="app.jpeg">
+              <div class="d-flex flex-column ms-2">
+                  <p style="color: white;">Download on the</p>
+                  <h5 style="color: white;">App Store</h5>
+              </div>
+          </button>
+      </div>
+      <div class="d-flex justify-content-center mt-2 ms-5">
+        <button class="d-flex align-items-center ms-5" style="background-color: black;">
+            <img class="mon" src="ps.png">
+            <div class="d-flex flex-column ms-2">
+                <p style="color: white;">Downlaod on the</p>
+                <h5 style="color: white;">Google play</h5>
+            </div>
+        </button>
+    </div>
+    
+      
+      
+  
+        </div>
+    </div>
+<!----------------------------------------------------------------------------------------->
+  </div>
+  <div class="container">
+  <hr class="border-dark my-auto mx-2 mt-3" style="height: 1px;">
+  </div>
+
+  <footer class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 justify-content-center  mt-5 ms-4"> <!-- Updated col classes -->
+            <h6>Start Planning</h6>
+            <p>Search by vendor</p>
+            <p>Search by city</p>
+            <p>Download Our App</p>
+            <p>Top Rated Vendors</p>
+            <p>Destination Wedding</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 justify-content-center  mt-5 ms-4"> <!-- Updated col classes -->
+            <h6>Wedding Ideas</h6>
+            <p><small>Wedding Blog</small></p>
+            <p><small>Wedding Inspiration Gallery</small></p>
+            <p><small>Real Wedding</small></p>
+            <p><small>Submit Wedding</small></p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mt-5 ms-4"> <!-- Updated col classes -->
+            <h6>Photo Gallery</h6>
+            <p><small>Bridal Wear</small></p>
+            <p><small>Wedding Jewellery</small></p>
+            <p><small>Bridal Makeup & Hair</small></p>
+            <p>Wedding Decor</p>
+            <p><small>Wedding Photography</small></p>
+            <p><small>Groom Wear</small></p>
+            <p><small>Invitations & Favours</small></p>
+            <p><small>Wedding Accessories</small></p>
+            <p><small>Mehendi Designs</small></p>
+
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mt-5 ms-4"> <!-- Updated col classes -->
+            <h6>Home</h6>
+            <p><small>About MarriageBazaar</small></p>
+            <p><small>Careers</small></p>
+            <p><small>Contact Us</small></p>
+            <p><small>Site Map</small></p>
+            <p><small>Terms & Conditions</small></p>
+            <p><small>privacy policy</small></p>
+            <p><small>Cancellation policy</small></p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mt-5 ms-4"> <!-- Updated col classes -->
+            <h6>Wedding Invitation Maker</h6>
+            <p><small>Wedding Card Designers</small></p>
+            <p><small>Save the Date Temolates</small></p>
+            <p><small>Invitation Viedo Tempelates</small></p>
+    
+
+        </div>
+    </div>
+
+   <h6 class="mt-3 text-center">c 2024 . All rights reserved</h6>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
